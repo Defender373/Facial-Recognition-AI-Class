@@ -1,4 +1,4 @@
-#Group Note
+# Group Note
 We had a lot of help from freeCodeCamp's Face Recognition tutorial and Facenet.
 
 
