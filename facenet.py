@@ -161,7 +161,10 @@ def who_is_it(image, database, model):
         dist = np.linalg.norm(db_enc - encoding)
         print("---------------------------------------------")
         
-        print('distance for %s is %s' %(name, dist))
+        percent = round( (1-dist)*100 , 2 )
+        
+        #print('distance for %s is %s' %(name, dist))
+        print("Percent Similarity %s%% " %(percent))
 
         # If this distance is less than the min_dist, then set min_dist to dist, and identity to name
         if dist < min_dist:
